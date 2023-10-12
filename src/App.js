@@ -1,7 +1,14 @@
 import "./styles/App.scss";
+import { HomePage } from "./pages/home/HomePage";
+// import { AboutPage } from "./pages/about/AboutPage";
+// import { PlanPage } from "./pages/plan/PlanPage";
 
-function App() {
-  return <div className="App">START</div>;
-}
-
-export default App;
+export const App = () => {
+  return (
+    <>
+      <HomePage />
+      {/* <AboutPage />
+      <PlanPage /> */}
+    </>
+  );
+};

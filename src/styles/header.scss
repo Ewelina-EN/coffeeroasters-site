@@ -1,0 +1,62 @@
+@use './global';
+
+.header {
+   background-repeat: no-repeat;
+   background-size: cover;
+   margin: 0 8px;
+   border-radius: 10px;
+   color: #FEFCF7; //change color by variables??
+}
+
+.header_main {
+   padding: 6rem 1.5rem;
+   text-align: center;
+}
+
+.header_title{
+   font-family: 'Fraunces';
+   font-size: 40px;
+   font-weight: 900;
+   line-height: 48px; /* 100% */
+}
+
+.header_content {
+   font-family: 'Barlow';
+   font-size: 15px;
+   font-weight: 400;
+   line-height: 25px; /* 166.667% */
+   color: #FEFCF7;
+   opacity: 0.8;
+}
+
+.header_btn {
+   border-radius: 6px;
+   border: none;
+   background: #0E8784;
+   color: #FEFCF7;
+   text-align: center;
+   font-family: 'Fraunces';
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 900;
+   line-height: 25px; /* 138.889% */
+   padding: 15px 31px;
+}
+
+.header_btn:hover, .header_btn:focus {
+        background-color: #66D2CF;
+        color: white;
+        outline: none;
+    }
+
+.header_home {
+   background-image: url('../assets/home/mobile/image-hero-coffeepress.jpg');
+}
+
+.header_about {
+   background-image: url('../assets/about/mobile/image-hero-whitecup.jpg');
+}
+
+.header_plan {
+   background-image: url('../assets/plan/mobile/image-hero-blackcup.jpg');
+}
