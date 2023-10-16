@@ -1,4 +1,4 @@
-export const Header = ({ title, content, button = null }) => {
+export const Hero = ({ title, content, button = null }) => {
   if (button) {
     button = <button className="header_btn">{button}</button>;
   }
