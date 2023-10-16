@@ -3,7 +3,7 @@ import { FaBars } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { IconContext } from "react-icons";
-import { SidebarData } from "./sidebardate";
+import { SidebarData } from "./sidebardata";
 import Logo from "../assets/shared/desktop/logo.svg";
 
 export const Navigation = () => {
@@ -15,33 +15,26 @@ export const Navigation = () => {
     <>
       <IconContext.Provider value={{ color: "#333D4B" }}>
         <div className="navbar">
-          <div>
-            <Link to="/">
-              <img src={Logo} className="navbar-logo" alt="logo"></img>
-            </Link>
-          </div>
-          <Link to="#" className="menu-bars">
-            <FaBars onClick={showSidebar} />
+          <Link to="/">
+            <img src={Logo} className="navbar-logo" alt="logo"></img>
           </Link>
+          {/* add to FaBars css on hover cursor style(pointer etc)
+          change size of hamburger icon for better UI on touch */}
+          <FaBars onClick={showSidebar} />
         </div>
         <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
           <ul className="nav-menu-items" onClick={showSidebar}>
             <li className="navbar-toggle">
-              <div>
-                <Link to="/">
-                  <img src={Logo} className="navbar-logo" alt="logo"></img>
-                </Link>
-              </div>
-              <Link to="#" className="menu-bars">
-                <AiOutlineClose />
+              <Link to="/">
+                <img src={Logo} className="navbar-logo" alt="logo"></img>
               </Link>
+              {/* the same like in 23 line */}
+              <AiOutlineClose />
             </li>
-            {SidebarData.map((item) => {
+            {SidebarData.map((item, index) => {
               return (
-                <li className={item.cName}>
-                  <Link to={item.path}>
-                    <span>{item.title}</span>
-                  </Link>
+                <li key={index} className={item.cName}>
+                  <Link to={item.path}>{item.title}</Link>
                 </li>
               );
             })}
