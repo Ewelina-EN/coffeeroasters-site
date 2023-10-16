@@ -5,7 +5,7 @@ import { HomePage } from "./pages/home/HomePage";
 import { AboutPage } from "./pages/about/AboutPage";
 import { PlanPage } from "./pages/plan/PlanPage";
 import { Navigation } from "./components/nav";
-import "./styles/App.scss";
+import "./scss/main.scss";
 
 const AppLayout = () => (
   <>

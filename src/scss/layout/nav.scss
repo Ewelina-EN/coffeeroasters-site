@@ -1,3 +1,5 @@
+@use '../base';
+
 .navbar {
   height: 80px;
   display: flex;
@@ -13,7 +15,7 @@
 .menu-bars {
   font-size: 20px;
   background: none;
-  color: #333D4B;
+  color: base.$dark-grey-blue;
   border-radius: 20px;
 }
 
@@ -41,7 +43,7 @@
   align-items: center;
   list-style: none;
   height: 60px;
-  font-family: 'Fraunces';
+  font-family: base.$heading-font;
   text-align: center;
   font-size: 24px;
   font-style: normal;

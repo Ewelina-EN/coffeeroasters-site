@@ -1,0 +1,57 @@
+@use '../base';
+
+.header {
+   background-repeat: no-repeat;
+   background-size: cover;
+   margin: 0 8px;
+   border-radius: 10px;
+   color: base.$btn-disabled;
+}
+
+.header_main {
+   padding: 6rem 1.5rem;
+   text-align: center;
+}
+
+.header_title{
+   font-size: 40px;
+   line-height: 48px;
+}
+
+.header_content {
+   font-size: 15px;
+   font-weight: 400;
+   line-height: 25px;
+   color: base.$light-cream;
+   opacity: 0.8;
+}
+
+.header_btn {
+   border-radius: 6px;
+   border: none;
+   background: base.$dark-cyan;
+   color: base.$light-cream;
+   text-align: center;
+   font-size: 18px;
+   font-weight: 900;
+   line-height: 25px;
+   padding: 15px 31px;
+}
+
+.header_btn:hover, .header_btn:focus {
+        background-color: base.$btn-hover;
+        color: base.$light-cream;
+        outline: none;
+    }
+
+.header_home {
+   background-image: url('../../assets/home/mobile/image-hero-coffeepress.jpg');
+}
+
+.header_about {
+   background-image: url('../../assets/about/mobile/image-hero-whitecup.jpg');
+}
+
+.header_plan {
+   background-image: url('../../assets/plan/mobile/image-hero-blackcup.jpg');
+}
