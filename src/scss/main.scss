@@ -1,3 +1,22 @@
-@import './base';
-@import './layout/nav.scss';
-@import './layout/header.scss';
+@use './base';
+@use './layout/nav.scss';
+@use './layout/header.scss';
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+// body {
+//     min-height: 100vh;
+// }

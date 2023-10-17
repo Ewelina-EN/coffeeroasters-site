@@ -1,0 +1,47 @@
+@use '../base';
+
+.collection {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.collection-title {
+    // add linear gradient like as is in project
+    color: base.$grey;
+    font-size: 40px;
+    line-height: 72px; /* 75% */
+    opacity: 0.4; 
+    margin-bottom: 20px;
+}
+
+.collection-list {
+    margin: auto;
+}
+
+.collection-img {
+    margin: auto;
+    max-width: 200px;
+}
+
+.collection-item {
+    padding-bottom: 47px;
+}
+
+.collection-details {
+    max-width: 280px;
+    margin: auto;
+    padding-top: 10px;
+}
+
+.collection-subtitle {
+    color: base.$dark-grey-blue;
+    line-height: 32px;
+    font-size: 24px;
+}
+
+.collection-summary {
+    color: base.$dark-grey-blue;
+    padding-top: 15px;
+    line-height: 25px;
+}
+
