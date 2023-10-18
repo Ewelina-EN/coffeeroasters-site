@@ -1,0 +1,58 @@
+@use '../base';
+
+.benefits {
+    text-align: center;
+    margin: 90px 48px;
+    position: relative;
+    top: -600px;
+}
+
+.benefits-info {
+    background-color: base.$outer-space;
+    color: base.$light-cream;
+    border-radius: 10px;
+    margin: 0 24px;
+    height: 800px;
+    padding: 48px 24px;
+    text-align: center;
+}
+
+.benefits-description {
+   font-size: 15px;
+   font-weight: 300;
+   line-height: 25px;
+   margin: 24px 0;
+}
+
+.benefits-item {
+    background-color: base.$dark-cyan;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    padding: 70px 10px;
+    color: base.$light-cream;
+    margin-top: 24px;
+}
+
+.benefits-img {
+    margin-bottom: 56px ;
+}
+
+.benefits-title {
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 28px;
+}
+
+.benefits-subtitle {
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 32px;
+}
+
+.benefits-summary {
+    margin-top: 24px;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 25px; 
+    padding: 0 30px;
+}
