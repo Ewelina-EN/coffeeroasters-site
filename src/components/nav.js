@@ -3,7 +3,7 @@ import { FaBars } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { IconContext } from "react-icons";
-import { SidebarData } from "./sidebardata";
+import { NavList } from "./navList";
 import Logo from "../assets/shared/desktop/logo.svg";
 
 export const Navigation = () => {
@@ -31,13 +31,7 @@ export const Navigation = () => {
               {/* the same like in 23 line */}
               <AiOutlineClose />
             </li>
-            {SidebarData.map((item, index) => {
-              return (
-                <li key={index} className={item.cName}>
-                  <Link to={item.path}>{item.title}</Link>
-                </li>
-              );
-            })}
+            <NavList />
           </ul>
         </nav>
       </IconContext.Provider>
