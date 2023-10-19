@@ -1,0 +1,44 @@
+@use '../base';
+
+.works {
+    text-align: center;
+    margin: 0 0 120px 0;
+}
+
+.works-title {
+    color: base.$grey;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 80px;
+}
+
+.work_list {
+    margin: 0 24px;
+}
+
+.work_num {
+    color: base.$pale-orange;
+    font-size: 72px;
+    line-height: 72px;
+    font-weight: 900;
+    font-family: base.$heading-font;
+    margin: 0;
+}
+
+.work_subtitle {
+    color: base.$dark-grey-blue;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 32px; /* 114.286% */
+    margin: 24px 0;
+}
+
+.work_summary {
+    color: base.$dark-grey-blue;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 25px;
+    margin-bottom: 56px;
+}
+

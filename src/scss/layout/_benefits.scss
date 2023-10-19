@@ -3,8 +3,6 @@
 .benefits {
     text-align: center;
     margin: 90px 48px;
-    position: relative;
-    top: -600px;
 }
 
 .benefits-info {
@@ -12,7 +10,7 @@
     color: base.$light-cream;
     border-radius: 10px;
     margin: 0 24px;
-    height: 800px;
+    // height: 800px;
     padding: 48px 24px;
     text-align: center;
 }

@@ -1,6 +1,6 @@
 import { BenefitsList } from "./dataList";
 import "../scss/layout/_benefits.scss";
-import { BgBenefits } from "../scss/layout/_bgbenefits";
+import { BgBenefits } from "./bgbenefits";
 
 export const Benefits = () => {
   return (
