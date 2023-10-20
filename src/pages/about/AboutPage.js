@@ -1,5 +1,11 @@
 import { HeaderAbout } from "./headerAbout";
+import { MainAbout } from "./mainAbout";
 
 export const AboutPage = () => {
-  return <HeaderAbout />;
+  return (
+    <>
+      <HeaderAbout />
+      <MainAbout />
+    </>
+  );
 };
