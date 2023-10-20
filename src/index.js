@@ -5,12 +5,14 @@ import { HomePage } from "./pages/home/homePage";
 import { AboutPage } from "./pages/about/AboutPage";
 import { PlanPage } from "./pages/plan/PlanPage";
 import { Navigation } from "./components/nav";
+import { Footer } from "./components/footer";
 import "./scss/main.scss";
 
 const AppLayout = () => (
   <>
     <Navigation />
     <Outlet />
+    <Footer />
   </>
 );
 

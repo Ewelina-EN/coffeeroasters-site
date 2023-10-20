@@ -1,0 +1,46 @@
+@use '../base';
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto 30px auto;
+    background-color: base.$outer-space;
+    padding: 54px;
+}
+
+.footer-menu .nav-text{
+    height: auto;
+    margin: 24px 0;
+}
+
+.footer-menu .nav-text a {
+    font-family: base.$main-font;
+    color: base.$grey;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 0.923px;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.footer-menu ul {
+    margin: 48px 0;
+}
+
+.footer-social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 120px;
+}
+
+.social-item {
+    color: white;
+
+}
+
