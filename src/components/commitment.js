@@ -5,7 +5,7 @@ export const Commitment = () => {
   return (
     <section className="commitment">
       <div>
-        <img src={CommitmentImg} className="commitment-img" />
+        <img src={CommitmentImg} className="commitment-img" alt="commitment" />
       </div>
       <div className="commitment-content">
         <h2 className="commitment-title">Our commitment</h2>
