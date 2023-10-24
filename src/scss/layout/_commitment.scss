@@ -1,0 +1,30 @@
+@use '../base';
+
+.commitment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 0 50px 0;
+    color: base.$dark-grey-blue;
+}
+
+.commitment-img {
+   border-radius: 8px; 
+   width: 100%;
+   margin-bottom: 40px;
+}
+
+.commitment-title {
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 48px;
+    margin-bottom: 30px;
+}
+
+.commitment-description {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 25px;
+}

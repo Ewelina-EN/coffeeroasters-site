@@ -7,9 +7,11 @@ import "../../scss/layout/_works.scss";
 export const MainHome = () => {
   return (
     <>
-      <CollectionSection />
-      <Benefits />
-      <Works />
+      <main>
+        <CollectionSection />
+        <Benefits />
+        <Works />
+      </main>
     </>
   );
 };

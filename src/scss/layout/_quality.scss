@@ -1,0 +1,31 @@
+@use '../base';
+
+.quality_img {
+    width: 80%;
+    border-radius: 10px;
+    position: relative;
+    top: 75px;
+    left: 33px;
+}
+
+.quality_content {
+    text-align: center;
+    color: base.$light-cream;
+    background-color: base.$dark-grey-blue;
+    border-radius: 10px;
+    padding-top: 130px;
+    margin-bottom: 130px;
+}
+
+.quality_title {
+    font-size: 28px;
+    line-height: 28px;
+    margin-bottom: 24px;
+}
+
+.quality_description {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 25px;
+    padding: 0 24px 60px 24px;
+}
