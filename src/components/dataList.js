@@ -164,109 +164,129 @@ export const SubscriptionList = [
   {
     id: "50",
     question: "How do you drink your coffee?",
+    name: "preference",
     options: [
       {
-        id: "",
+        id: "501",
         type: "Capsule",
+        sub: "capsule",
         answer: "Compatible with Nespresso systems and similar brewers",
       },
       {
-        id: "",
+        id: "502",
         type: "Filter",
+        sub: "filter",
         answer: "For pour over or drip methods like Aeropress, Chemex, and V60",
       },
       {
-        id: "",
+        id: "503",
         type: "Espresso",
+        sub: "espresso",
         answer:
           "Dense and finely ground beans for an intense, flavorful experience",
       },
     ],
   },
   {
-    id: "50",
+    id: "51",
     question: "What type of coffee?",
+    name: "bean",
     options: [
       {
-        id: "",
+        id: "510",
         type: "Single Origin",
+        sub: "single",
         answer:
           "Distinct, high quality coffee from a specific family-owned farm",
       },
       {
-        id: "",
+        id: "511",
         type: "Decaf",
+        sub: "decaf",
         answer:
           "Just like regular coffee, except the caffeine has been removed",
       },
       {
-        id: "",
+        id: "512",
         type: "Blended",
+        sub: "blended",
         answer:
           "Combination of two or three dark roasted beans of organic coffees",
       },
     ],
   },
   {
-    id: "50",
+    id: "52",
     question: "How much would you like?",
+    name: "quantity",
     options: [
       {
-        id: "",
+        id: "520",
         type: "250g",
+        sub: "250g",
         answer: "Perfect for the solo drinker. Yields about 12 delicious cups.",
       },
       {
-        id: "",
+        id: "521",
         type: "500g",
+        sub: "500g",
         answer: "Perfect option for a couple. Yields about 40 delectable cups.",
       },
       {
-        id: "",
-        type: "100g",
+        id: "522",
+        type: "1000g",
+        sub: "1000g",
         answer:
           "Perfect for offices and events. Yields about 90 delightful cups.",
       },
     ],
   },
   {
-    id: "50",
+    id: "53",
     question: "Want us to grind them?",
+    name: "grind",
     options: [
       {
-        id: "",
+        id: "530",
         type: "Wholebean",
+        sub: "wholebean",
         answer: "Best choice if you cherish the full sensory experience",
       },
       {
-        id: "",
+        id: "531",
         type: "Filter",
+        sub: "filter",
         answer: "For drip or pour-over coffee methods such as V60 or Aeropress",
       },
       {
-        id: "",
+        id: "532",
         type: "Cafetiére",
+        sub: "cafetiére",
         answer: "Course ground beans specially suited for french press coffee",
       },
     ],
   },
   {
-    id: "50",
+    id: "54",
     question: "How often should we deliver?",
+    name: "deliveries",
     options: [
       {
-        id: "",
+        id: "540",
         type: "Every week",
+        sub: "weekly",
         answer: "$7.20 per shipment. Includes free first-class shipping.",
       },
       {
-        id: "",
+        id: "541",
         type: "Every 2 weeks",
+        sub: "fortnight",
         answer: "$9.60 per shipment. Includes free priority shipping.",
       },
       {
-        id: "",
+        id: "542",
         type: "Every month",
+        sub: "monthly",
         answer: "$12.00 per shipment. Includes free priority shipping.",
       },
     ],

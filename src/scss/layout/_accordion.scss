@@ -1,0 +1,43 @@
+@use '../base';
+
+.accordion--btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    color: base.$dark-grey-blue;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 900;
+    text-align: left;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+
+    &::after {
+        //position: absolute;
+        content: "";
+        background-image: url('../../assets/plan/desktop/icon-arrow.svg');
+        width: 18px;
+        height: 18px;
+        background-repeat: no-repeat;
+        flex-shrink: 0;
+        transition: transform .2s ease-in-out;
+    }
+
+
+    &:not(.collapsed)::after {
+        background-image: url('../../assets/plan/desktop/icon-arrow.svg');
+        transform: rotate(-180deg);
+    }
+}
+
+.collapse50,
+.collapse51,
+.collapse52,
+.collapse53,
+.collapse54 {
+    display: none;
+}
