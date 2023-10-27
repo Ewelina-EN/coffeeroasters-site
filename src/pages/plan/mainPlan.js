@@ -3,9 +3,9 @@ import { OrderSteps } from "../../components/orderSteps";
 
 export const MainPlan = () => {
   return (
-    <main>
+    <>
       <OrderSteps />
-      <Accordion />
-    </main>
+      <main>{/* <Accordion /> */}</main>
+    </>
   );
 };

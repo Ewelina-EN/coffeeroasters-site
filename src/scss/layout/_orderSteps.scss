@@ -1,0 +1,38 @@
+@use '../base';
+
+.order {
+    width: 100%;
+    background-color: base.$outer-space;
+    color: base.$light-cream;
+    text-align: center;
+}
+
+.order_list {
+    margin: 120px 0;
+    padding: 24px 24px;
+}
+
+.order_item {
+    margin: 56px 0;
+}
+
+.order_num {
+    margin: 0;
+    color: base.$pale-orange;   
+    font-size: 72px;
+    font-weight: 900;
+    line-height: 72px;
+}
+
+.order_title {
+    margin: 24px 0;
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 32px;  
+}
+
+.order_description {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+}
