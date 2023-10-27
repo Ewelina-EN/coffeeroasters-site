@@ -1,25 +1,16 @@
 import { SubscriptionList } from "./dataList";
 import "../scss/layout/_accordion.scss";
+import { useState } from "react";
 
 export const Accordion = () => {
-  const handleShow = (e) => {
-    //złapać klik na pytaniu
-    //złapanie rodzica tego pytania
-    //pobranie atrybutu data-target
-    //pobranie elementu div, który jest następnym rodzeństwem rodzica przycisku
-    //dodanie i usunięcie klas CSS na elementach aby zwijac i rozwijac menu
-    const questionBtn = e.target;
-    // console.log(questionBtn);
-    const parent = questionBtn.parentElement;
-    // console.log("parent of btn", parent);
-    const attribute = questionBtn.getAttribute("data-target");
-    console.log(attribute);
-    const targetDiv = parent.nextSibling;
-    // console.log("div of parent", targetDiv);
-    targetDiv.classList.toggle("collapse");
-    targetDiv.classList.toggle(attribute);
-    targetDiv.classList.toggle("collapse__show");
-    questionBtn.classList.toggle("collapsed");
+  const [activeItem, setActiveItem] = useState([]);
+
+  const handleShow = (id) => {
+    if (activeItem.includes(id)) {
+      setActiveItem(activeItem.filter((item) => item !== id));
+    } else {
+      setActiveItem([...activeItem, id]);
+    }
   };
 
   return (
@@ -31,17 +22,22 @@ export const Accordion = () => {
               <div id={item.name}>
                 <h2>
                   <button
-                    onClick={handleShow}
+                    onClick={() => handleShow(item.id)}
                     id={`accordionBtn${item.id}`}
-                    className={`accordion--btn`}
-                    data-toggle="collapse"
-                    data-target={`collapse${item.id}`}
+                    className={`accordion--btn ${
+                      activeItem.includes(item.id) ? "collapsed" : ""
+                    }`}
                   >
                     {item.question}
                   </button>
                 </h2>
 
-                <div id={`collapse${item.id}`} className={`collapse${item.id}`}>
+                <div
+                  id={`collapse${item.id}`}
+                  className={`collapse ${
+                    activeItem.includes(item.id) ? "show" : ""
+                  }`}
+                >
                   {item.options.map((opt) => {
                     return (
                       <div key={opt.id}>
