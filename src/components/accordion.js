@@ -18,9 +18,9 @@ export const Accordion = () => {
       <ul>
         {SubscriptionList.map((item) => {
           return (
-            <li key={item.id}>
+            <li key={item.id} className="accordion_item">
               <div id={item.name}>
-                <h2>
+                <h2 className="accordion_title">
                   <button
                     onClick={() => handleShow(item.id)}
                     id={`accordionBtn${item.id}`}
@@ -40,11 +40,11 @@ export const Accordion = () => {
                 >
                   {item.options.map((opt) => {
                     return (
-                      <div key={opt.id}>
+                      <div key={opt.id} className="accordion_answer">
                         <input type="radio" id={opt.sub} name={opt.name} />
-                        <label htmlFor={opt.sub}>
-                          <span>{opt.type}</span>
-                          <span>{opt.answer}</span>
+                        <label htmlFor={opt.sub} className="accordion_label">
+                          <h3 className="accordion_subtitle">{opt.type}</h3>
+                          <p className="accordion_description">{opt.answer}</p>
                         </label>
                       </div>
                     );

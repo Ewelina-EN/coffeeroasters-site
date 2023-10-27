@@ -5,7 +5,9 @@ export const MainPlan = () => {
   return (
     <>
       <OrderSteps />
-      <main>{/* <Accordion /> */}</main>
+      <main>
+        <Accordion />
+      </main>
     </>
   );
 };

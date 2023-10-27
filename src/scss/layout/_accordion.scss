@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    color: base.$dark-grey-blue;
+    color: base.$grey;
     font-size: 24px;
     line-height: 28px;
     font-weight: 900;
@@ -26,6 +26,7 @@
         flex-shrink: 0;
         transition: transform .2s ease-in-out;
         transform: rotate(0);
+        margin-left: 67px;
     }
 
 
@@ -38,6 +39,66 @@
     display: none;
 
     &.show {
-        display: block;
+        margin: 24px 0 0 0;
+        display: flex;
+        flex-direction: column;
+
     }
+}
+
+.accordion_item {
+    margin: 32px 0;
+    color: base.$dark-grey-blue;
+}
+
+.accordion_title {
+    color: base.$grey;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 28px;
+}
+
+.accordion_answer {
+    position: relative;
+    margin: 8px 0;
+
+
+input[type="radio"] {
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+
+input[type="radio"]:checked+label {
+background-color: base.$dark-cyan;
+color: base.$light-cream;
+}
+}
+
+.accordion_label {
+    background-color: #F4F1EB;
+    display: flex;
+    flex-direction: column;
+    padding: 24px 25px;
+    border-radius: 10px;
+}
+
+.accordion_label:hover, .accordion_label:active{
+    background-color: base.$pale-orange;
+}
+
+.accordion_subtitle {
+    // color: base.$dark-grey-blue;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 32px;
+    margin-bottom: 8px;
+}
+
+.accordion_description {
+    // color: base.$dark-grey-blue;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px; 
 }
