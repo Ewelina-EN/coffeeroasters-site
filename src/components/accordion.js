@@ -41,8 +41,11 @@ export const Accordion = () => {
                   {item.options.map((opt) => {
                     return (
                       <div key={opt.id} className="accordion_answer">
-                        <input type="radio" id={opt.sub} name={opt.name} />
-                        <label htmlFor={opt.sub} className="accordion_label">
+                          type="radio"
+                          id={opt.type}
+                          name={item.name}
+                          value={opt.type}
+                        <label htmlFor={opt.type} className="accordion_label">
                           <h3 className="accordion_subtitle">{opt.type}</h3>
                           <p className="accordion_description">{opt.answer}</p>
                         </label>
