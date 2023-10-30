@@ -1,9 +1,11 @@
 import { SubscriptionList } from "./dataList";
 import "../scss/layout/_accordion.scss";
 import { useState } from "react";
+import { OrderSummary } from "./orderSummary";
 
 export const Accordion = () => {
   const [activeItem, setActiveItem] = useState([]);
+  const [selectedOptions, setSelectedOptions] = useState({});
 
   const handleShow = (id) => {
     if (activeItem.includes(id)) {
@@ -11,6 +13,13 @@ export const Accordion = () => {
     } else {
       setActiveItem([...activeItem, id]);
     }
+  };
+
+  const handleOptionChange = (questionName, answerType) => {
+    setSelectedOptions((prevSelectedOptions) => ({
+      ...prevSelectedOptions,
+      [questionName]: answerType,
+    }));
   };
 
   return (
@@ -41,10 +50,16 @@ export const Accordion = () => {
                   {item.options.map((opt) => {
                     return (
                       <div key={opt.id} className="accordion_answer">
+                        <input
                           type="radio"
                           id={opt.type}
                           name={item.name}
                           value={opt.type}
+                          checked={selectedOptions[item.name] === opt.type}
+                          onChange={() =>
+                            handleOptionChange(item.name, opt.type)
+                          }
+                        />
                         <label htmlFor={opt.type} className="accordion_label">
                           <h3 className="accordion_subtitle">{opt.type}</h3>
                           <p className="accordion_description">{opt.answer}</p>
@@ -58,6 +73,7 @@ export const Accordion = () => {
           );
         })}
       </ul>
+      <OrderSummary selectedOptions={selectedOptions} />
     </div>
   );
 };

@@ -1,0 +1,16 @@
+@use '../base';
+
+.summary {
+    background-color: base.$dark-grey-blue;
+    border-radius: 8px;
+    padding: 25px;
+}
+
+.summary_title {
+    font-family: base.$main-font;
+    color: base.$grey;
+    font-size: 16px;    
+    font-weight: 400;
+    line-height: 26px;
+    text-transform: uppercase;
+}
