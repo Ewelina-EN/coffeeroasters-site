@@ -5,12 +5,12 @@ export const OrderSummary = ({ selectedOptions }) => {
     <div className="summary">
       <h3 className="summary_title">ORDER SUMMARY</h3>
       <p className="summary_description">
-        “I drink my coffee as
-        <span>{selectedOptions.preference || "_____"}</span>, with a{" "}
-        <span>{selectedOptions.bean || "...."} </span>type of bean.
-        <span> {selectedOptions.quantity || "...."}</span>
-        ground ala <span>{selectedOptions.grind || "...."}</span>, sent to me
-        <span>{selectedOptions.deliveries || "...."}</span>.”
+        “I drink my coffee as{" "}
+        <span>{selectedOptions.preference || "____"}</span>, with a{" "}
+        <span>{selectedOptions.bean || "____"}</span> type of bean.
+        <span> {selectedOptions.quantity || "____"}</span> ground ala
+        <span> {selectedOptions.grind || "____"}</span>, sent to me
+        <span> {selectedOptions.deliveries || "____"}</span>.”
       </p>
     </div>
   );
