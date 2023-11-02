@@ -2,10 +2,12 @@ import { SubscriptionList } from "./dataList";
 import "../scss/layout/_accordion.scss";
 import { useState } from "react";
 import { OrderSummary } from "./orderSummary";
+import { OrderCheckout } from "./orderCheckout";
 
 export const Accordion = () => {
   const [activeItem, setActiveItem] = useState([]);
   const [selectedOptions, setSelectedOptions] = useState({});
+  const [isOrderCheckoutVisible, setOrderCheckoutVisible] = useState(false);
 
   const handleShow = (id) => {
     if (activeItem.includes(id)) {
@@ -20,6 +22,10 @@ export const Accordion = () => {
       ...prevSelectedOptions,
       [questionName]: answerType,
     }));
+  };
+
+  const toggleOrderCheckout = () => {
+    setOrderCheckoutVisible(!isOrderCheckoutVisible);
   };
 
   return (
@@ -74,6 +80,10 @@ export const Accordion = () => {
         })}
       </ul>
       <OrderSummary selectedOptions={selectedOptions} />
+      <OrderCheckout
+        isVisible={isOrderCheckoutVisible}
+        onClose={toggleOrderCheckout}
+      />
     </div>
   );
 };
