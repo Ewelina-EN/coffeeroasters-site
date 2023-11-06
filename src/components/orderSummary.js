@@ -1,6 +1,6 @@
 import "../scss/layout/_orderSummary.scss";
 
-export const OrderSummary = ({ selectedOptions }) => {
+export const OrderSummary = ({ selectedOptions, toggleOrderCheckout }) => {
   return (
     <form>
       <div className="summary">
@@ -14,7 +14,9 @@ export const OrderSummary = ({ selectedOptions }) => {
           <span> {selectedOptions.deliveries || "____"}</span>.”
         </p>
       </div>
-      <button type="submit">Create my plan!</button>
+      <button type="submit" onClick={toggleOrderCheckout}>
+        Create my plan!
+      </button>
     </form>
   );
 };

@@ -7,7 +7,7 @@ import { OrderCheckout } from "./orderCheckout";
 export const Accordion = () => {
   const [activeItem, setActiveItem] = useState([]);
   const [selectedOptions, setSelectedOptions] = useState({});
-  const [isOrderCheckoutVisible, setOrderCheckoutVisible] = useState(false);
+  const [isOrderCheckoutVisible, setOrderCheckoutVisible] = useState(true);
 
   const handleShow = (id) => {
     if (activeItem.includes(id)) {
@@ -26,6 +26,7 @@ export const Accordion = () => {
 
   const toggleOrderCheckout = () => {
     setOrderCheckoutVisible(!isOrderCheckoutVisible);
+    console.log("toggle");
   };
 
   return (
@@ -79,11 +80,16 @@ export const Accordion = () => {
           );
         })}
       </ul>
-      <OrderSummary selectedOptions={selectedOptions} />
-      <OrderCheckout
-        isVisible={isOrderCheckoutVisible}
-        onClose={toggleOrderCheckout}
+      <OrderSummary
+        selectedOptions={selectedOptions}
+        toggleOrderCheckout={toggleOrderCheckout}
       />
+      {isOrderCheckoutVisible && (
+        <OrderCheckout
+          selectedOptions={selectedOptions}
+          toggleOrderCheckout={toggleOrderCheckout}
+        />
+      )}
     </div>
   );
 };

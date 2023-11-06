@@ -1,6 +1,6 @@
 import "../scss/layout/_checkout.scss";
 
-export const OrderCheckout = ({ onClose }) => {
+export const OrderCheckout = ({ selectedOptions, toggleOrderCheckout }) => {
   return (
     <div className="order-checkout-overlay">
       <form>
@@ -14,7 +14,9 @@ export const OrderCheckout = ({ onClose }) => {
             be redeemed at the checkout.
           </p>
         </div>
-        <button onClick={onClose}>Checkout - </button>
+        <button type="submit" onClick={toggleOrderCheckout}>
+          Checkout
+        </button>
       </form>
     </div>
   );
