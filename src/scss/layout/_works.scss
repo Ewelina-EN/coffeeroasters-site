@@ -3,21 +3,14 @@
 .works {
     text-align: center;
     margin: 0 0 120px 0;
-
-    &__title{
-        color: base.$grey;
-        font-size: 24px;
-        line-height: 32px;
-        margin-bottom: 80px;
-    }
 }
 
-// .works-title {
-//     color: base.$grey;
-//     font-size: 24px;
-//     line-height: 32px;
-//     margin-bottom: 80px;
-// }
+.works-title {
+    color: base.$grey;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 80px;
+}
 
 .work_list {
     margin: 0 24px;

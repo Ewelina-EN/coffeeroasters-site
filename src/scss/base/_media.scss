@@ -1,14 +1,5 @@
-$breakpoints: 
-("xs-mobile": 375px,
-"sm-mobile": 576px,
-"md-tablet": 768px,
-"lg-tablet": 992px,
-"xl-desktop": 1200px,
-"xxl-desktop": 1400px,
-);
-
-@mixin md-tablet {
-    @media (min-width: map-get($breakpoints, "md-tablet")) {
-        @content;
-    }
-}
+$small: 0px;
+$medium: 640px;
+$large: 1024px;
+$xlarge: 1200px;
+$xxlarge: 1440px;

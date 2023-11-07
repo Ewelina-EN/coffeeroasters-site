@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import { HomePage } from "./pages/home/homePage";
 import { AboutPage } from "./pages/about/aboutPage";
-import { PlanPage } from "./pages/plan/planPage";
+import { PlanPage } from "./pages/plan/PlanPage";
 import { Navigation } from "./components/nav";
 import { Footer } from "./components/footer";
 import "./scss/main.scss";
