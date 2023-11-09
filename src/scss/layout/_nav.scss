@@ -80,11 +80,11 @@ span {
 
 @media (min-width: $medium) {
   .navbar {
-    margin: 30px 40px;
+    margin: 20px 40px 30px 40px;
   }
 
   .navbar-logo{
-    height: 26px;;
+    height: 27px;
   }
 
   .navbar-toggle {
@@ -116,7 +116,7 @@ span {
     color: base.$grey;
     width: auto;
     font-family: base.$main-font;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 700;
     line-height: 15px; /* 125% */
     letter-spacing: 0.923px;

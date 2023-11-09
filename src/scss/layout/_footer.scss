@@ -1,4 +1,5 @@
 @use '../base';
+@import '../base/media';
 
 .footer {
     display: flex;
@@ -41,6 +42,20 @@
 
 .social-item {
     color: white;
+}
 
+@media (min-width: $medium) {
+    .footer-menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 285px;
+        margin: 32px 0 65px 0;
+    }
+
+    .footer-menu .nav-text{
+        margin: 0;
+    }
 }
 

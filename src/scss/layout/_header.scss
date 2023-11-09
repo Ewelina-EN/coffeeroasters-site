@@ -67,7 +67,6 @@
 
       .header_main {
          padding: 103px 0 103px 58px;
-         // margin: 0 39px;
          text-align: left;
          width: 450px;
       }
@@ -80,13 +79,16 @@
 
       .header_home {
          background-image: url('../../assets/home/tablet/image-hero-coffeepress.jpg');
+         background-position: center;
       }
 
       .header_about {
          background-image: url('../../assets/about/tablet/image-hero-whitecup.jpg');
+         background-position: center;
       }
 
       .header_plan {
          background-image: url('../../assets/plan/tablet/image-hero-blackcup.jpg');
+         background-position: center;
       }
 }
