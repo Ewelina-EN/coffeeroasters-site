@@ -3,6 +3,13 @@ import { WorksData } from "./dataList";
 export const WorksList = () => {
   return (
     <>
+      <hr className="line" />
+      <section className="point">
+        <div className="circle"></div>
+        <div className="circle"></div>
+        <div className="circle"></div>
+      </section>
+
       <ul className="work_list">
         {WorksData.map((work) => {
           return (

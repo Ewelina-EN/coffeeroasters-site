@@ -1,4 +1,5 @@
 @use '../base';
+@import '../base/media';
 
 .collection {
     text-align: center;
@@ -42,5 +43,43 @@
     color: base.$dark-grey-blue;
     padding-top: 15px;
     line-height: 25px;
+    font-weight: 400;
 }
 
+@media (min-width: $medium) {
+
+    .collection {
+        margin: 0 80px 120px 80px;
+    }
+
+    .collection-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .collection-img {
+        margin: auto;
+        max-width: 280px;
+    }
+
+    .collection-item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+    }
+
+    .collection-details {
+        margin: 0 0 40px 0;
+        padding: 0;
+    }
+
+    .collection-subtitle {
+        font-weight: 900;
+    }
+
+    .collection-summary {
+        padding-top: 24px;
+    }
+}

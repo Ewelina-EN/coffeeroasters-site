@@ -11,12 +11,12 @@ export const Benefits = () => {
           {BenefitsList.map((benefit) => {
             return (
               <li key={benefit.id} className="benefits-item">
-                <div>
-                  <img
-                    src={benefit.imgUrl}
-                    alt={benefit.alt}
-                    className="benefits-img"
-                  />
+                <img
+                  src={benefit.imgUrl}
+                  alt={benefit.alt}
+                  className="benefits-img"
+                />
+                <div className="benefits-detail">
                   <h3 className="benefits-subtitle">{benefit.title}</h3>
                   <p className="benefits-summary">{benefit.summary}</p>
                 </div>

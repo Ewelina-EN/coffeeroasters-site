@@ -1,4 +1,5 @@
 @use '../base';
+@import '../base/media';
 
 .works {
     text-align: center;
@@ -42,3 +43,72 @@
     margin-bottom: 56px;
 }
 
+.point {
+    display: none;
+}
+
+@media (min-width: $medium){
+    .works {
+        text-align: left;
+        margin: 0 0 144px 0;
+    }
+
+    .works-title {
+        font-size: 24px;
+        font-weight: 900;
+        line-height: 32px; /* 133.333% */
+        margin-bottom: 40px;
+    }
+
+    .work_list {
+        margin: 40px 0 48px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 5px;
+        // width: 223px;
+    }
+
+    .work_item {
+        width: 223px;
+    }
+
+    .work_subtitle {
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 32px; /* 114.286% */
+        margin-right: 70px;
+    }
+
+    .work_summary {
+       padding: 0 10px 0 0;
+        width: 223px;
+    }
+
+    .line {
+        background-color: base.$pale-orange;
+        height: 2px;
+        border: none;
+        margin-bottom: -16px;
+        margin-right: 200px;
+    }
+
+    .point {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 74%; 
+    }
+
+    .circle {
+        width: 31px;
+	    height: 31px;
+	    border: 2px solid base.$dark-cyan;
+	    border-radius: 100%;
+        background-color: white;
+	    // margin: auto 0;
+    }
+}
