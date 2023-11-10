@@ -47,6 +47,10 @@
     display: none;
 }
 
+.line {
+    display: none;
+}
+
 @media (min-width: $medium){
     .works {
         text-align: left;
@@ -88,6 +92,7 @@
     }
 
     .line {
+        display: inline;
         background-color: base.$pale-orange;
         height: 2px;
         border: none;
