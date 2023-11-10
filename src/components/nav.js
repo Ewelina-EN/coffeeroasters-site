@@ -13,7 +13,9 @@ export const Navigation = ({ isFooter }) => {
 
   const navListClassName = isFooter ? "footer-menu" : "nav-menu";
 
-  const showSidebar = () => setSidebar(!sidebar);
+  const showSidebar = () => {
+    setSidebar(!sidebar);
+  };
 
   useEffect(() => {
     const handleWindowResize = () => {
@@ -36,21 +38,22 @@ export const Navigation = ({ isFooter }) => {
           </Link>
           {/* add to FaBars css on hover cursor style(pointer etc)
           change size of hamburger icon for better UI on touch */}
-          {windowWidth <= 640 ? (
-            <FaBars onClick={showSidebar} />
-          ) : (
+
+          <FaBars onClick={showSidebar} className="fabars" />
+
+          <>
             <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
-              <ul className="nav-menu-items" onClick={showSidebar}>
+              <ul className="nav-menu-items">
                 <li className="navbar-toggle">
                   <Link to="/">
                     <img src={LogoNav} className="navbar-logo" alt="logo" />
                   </Link>
-                  <AiOutlineClose />
+                  <AiOutlineClose onClick={showSidebar} />
                 </li>
-                <NavList className={navListClassName} />
+                <NavList className={navListClassName} onClick={showSidebar} />
               </ul>
             </nav>
-          )}
+          </>
         </div>
       </IconContext.Provider>
     </>
