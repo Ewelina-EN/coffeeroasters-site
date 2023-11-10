@@ -4,7 +4,7 @@ import { BgBenefits } from "./bgbenefits";
 
 export const Benefits = () => {
   return (
-    <>
+    <div className="benefits-main">
       <BgBenefits />
       <section className="benefits">
         <ul>
@@ -25,6 +25,6 @@ export const Benefits = () => {
           })}
         </ul>
       </section>
-    </>
+    </div>
   );
 };
