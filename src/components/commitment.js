@@ -1,12 +1,9 @@
-import CommitmentImg from "../assets/about/desktop/image-commitment.jpg";
 import "../scss/layout/_commitment.scss";
 
 export const Commitment = () => {
   return (
     <section className="commitment">
-      <div>
-        <img src={CommitmentImg} className="commitment-img" alt="commitment" />
-      </div>
+      <div className="commitment-img"></div>
       <div className="commitment-content">
         <h2 className="commitment-title">Our commitment</h2>
         <p className="commitment-description">

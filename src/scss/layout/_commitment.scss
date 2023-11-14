@@ -1,4 +1,5 @@
 @use '../base';
+@import '../base/media';
 
 .commitment {
     display: flex;
@@ -14,6 +15,7 @@
    border-radius: 8px; 
    width: 100%;
    margin-bottom: 40px;
+   background-image: url('../../assets/about/mobile/image-commitment.jpg');
 }
 
 .commitment-title {
@@ -27,4 +29,36 @@
     font-size: 15px;
     font-weight: 300;
     line-height: 25px;
+}
+
+@media (min-width: $medium) {
+    .commitment {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        // grid-column-gap: 5px;
+        grid-row-gap: 0px;
+    }
+
+    .commitment-picture {
+        grid-area: 1 / 1 / 2 / 2; 
+    }
+
+    .commitment-img {
+        width: 281px;
+        height: 470px;
+        margin: 0 auto;
+        background-image: url('../../assets/about/tablet/image-commitment.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .commitment-content {
+        grid-area: 1 / 2 / 2 / 4; 
+        text-align: left;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 25px; /* 166.667% */
+        margin-left: 71px
+    }
 }
