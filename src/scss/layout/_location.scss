@@ -1,4 +1,5 @@
 @use '../base';
+@import '../base/media';
 
 .location {
     text-align: center;
@@ -28,3 +29,33 @@
     font-weight: 300;
 }
 
+@media (min-width: $medium) {
+    .location_title {
+        text-align: left;
+        font-weight: 900;
+        margin: 0;
+    }
+
+    .location_item {
+        margin: 74px 50px 74px 0;
+    }
+
+    .location_country {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        text-align: left;
+        margin: 0;
+    }
+
+    .location_subtitle {
+        font-size: 24px;
+        font-weight: 900;
+        line-height: 36px; /* 150% */
+    }
+
+    .location_adress {
+        font-weight: 400;
+    }
+}

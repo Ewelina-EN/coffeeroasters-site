@@ -45,6 +45,10 @@
 }
 
 @media (min-width: $medium) {
+    .footer {
+        margin: 0 39px 70px 39px;
+    }
+
     .footer-menu {
         display: flex;
         flex-direction: row;

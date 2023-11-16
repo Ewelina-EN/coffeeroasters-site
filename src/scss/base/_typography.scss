@@ -1,4 +1,5 @@
 @use './variables';
+@import '../base/media';
 
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&display=swap');
 
@@ -20,4 +21,10 @@ ul {
 
 li {
     list-style: none;
+}
+
+@media (min-width: $medium) {
+    main {
+        margin: 120px 39px;
+    }
 }

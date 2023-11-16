@@ -4,7 +4,7 @@ import "../scss/layout/_quality.scss";
 export const Quality = () => {
   return (
     <section className="main">
-      <img src={QualityImg} className="quality_img" alt="quality"></img>
+      <div className="quality_img"></div>
       <div className="quality_content">
         <h3 className="quality_title">Uncompromising quality</h3>
         <p className="quality_description">
