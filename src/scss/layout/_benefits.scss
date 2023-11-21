@@ -80,8 +80,14 @@
         margin: auto 72px 144px 72px;
     }
 
+    .benefits-main {
+    &::after {
+        height: 67%;
+    }
+}
+
     .benefits-info {
-        padding: 70px 90px;
+        padding: 70px 90px 0 70px;
     }
 
     .benefits-title {
