@@ -5,7 +5,7 @@
     border-radius: 8px;
     padding: 25px;
     color: #FFF;
-    margin: 120px 0 50px 0;
+    margin: 120px 0 70px 0;
 }
 
 .summary_title {
@@ -29,4 +29,9 @@
 .summary_description span {
     color: base.$dark-cyan;
     margin: 0;
+}
+
+.summary_btn {
+    display: block;
+    margin: 0 auto;
 }
