@@ -16,18 +16,23 @@ export const Accordion = () => {
       setActiveItem([...activeItem, id]);
     }
   };
-
+  // TODO: nie łąpie odpowiedzi Filter(nie łapie styli ale wyświetla w konsoli) i odpowiedzi w ostanim pytaniu(nie łapie styli ale konsoli wyswietla poprawnie)
   const handleOptionChange = (questionName, answerType) => {
+    const updatedAnswerType = answerType
+      .split(" ")
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(" ");
+
     setSelectedOptions((prevSelectedOptions) => ({
       ...prevSelectedOptions,
-      [questionName]: answerType,
+      [questionName]: updatedAnswerType,
     }));
+    console.log(updatedAnswerType);
   };
 
   const toggleOrderCheckout = (e) => {
     e.preventDefault();
     setOrderCheckoutVisible(!isOrderCheckoutVisible);
-    console.log("toggle");
   };
 
   return (
@@ -39,7 +44,9 @@ export const Accordion = () => {
               <div id={item.name}>
                 <h2 className="accordion_title">
                   <button
-                    onClick={() => handleShow(item.id)}
+                    onClick={() => {
+                      handleShow(item.id);
+                    }}
                     id={`accordionBtn${item.id}`}
                     className={`accordion--btn ${
                       activeItem.includes(item.id) ? "collapsed" : ""
