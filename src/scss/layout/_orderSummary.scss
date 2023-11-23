@@ -1,0 +1,37 @@
+@use '../base';
+
+.summary {
+    background-color: base.$dark-grey-blue;
+    border-radius: 8px;
+    padding: 25px;
+    color: #FFF;
+    margin: 120px 0 70px 0;
+}
+
+.summary_title {
+    font-family: base.$main-font;
+    color: base.$grey;
+    font-size: 16px;    
+    font-weight: 400;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
+.summary_description {
+    margin: 10px 0 0 0;
+    font-family: base.$heading-font;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 40px;
+}
+
+.summary_description span {
+    color: base.$dark-cyan;
+    margin: 0;
+}
+
+.summary_btn {
+    display: block;
+    margin: 0 auto;
+}

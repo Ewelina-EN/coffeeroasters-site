@@ -135,3 +135,145 @@ export const LocationData = [
     alt: "our location in the australia",
   },
 ];
+
+export const OrderStepsList = [
+  {
+    id: "40",
+    num: "01",
+    title: "Pick your coffee",
+    summary:
+      "Select from our evolving range of artisan coffees. Our beans are ethically sourced and we pay fair prices for them. There are new coffees in all profiles every month for you to try out.",
+  },
+  {
+    id: "41",
+    num: "02",
+    title: "Choose the frequency",
+    summary:
+      "Customize your order frequency, quantity, even your roast style and grind type. Pause, skip or cancel your subscription with no commitment through our online portal.",
+  },
+  {
+    id: "42",
+    num: "03",
+    title: "Receive and enjoy!",
+    summary:
+      "We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning world-class coffees curated to provide a distinct tasting experience.",
+  },
+];
+
+export const SubscriptionList = [
+  {
+    id: "50",
+    question: "How do you drink your coffee?",
+    name: "preference",
+    options: [
+      {
+        id: "501",
+        type: "Capsule",
+        answer: "Compatible with Nespresso systems and similar brewers",
+      },
+      {
+        id: "502",
+        type: "Filter",
+        answer: "For pour over or drip methods like Aeropress, Chemex, and V60",
+      },
+      {
+        id: "503",
+        type: "Espresso",
+        answer:
+          "Dense and finely ground beans for an intense, flavorful experience",
+      },
+    ],
+  },
+  {
+    id: "51",
+    question: "What type of coffee?",
+    name: "bean",
+    options: [
+      {
+        id: "510",
+        type: "Single Origin",
+        answer:
+          "Distinct, high quality coffee from a specific family-owned farm",
+      },
+      {
+        id: "511",
+        type: "Decaf",
+        answer:
+          "Just like regular coffee, except the caffeine has been removed",
+      },
+      {
+        id: "512",
+        type: "Blended",
+        answer:
+          "Combination of two or three dark roasted beans of organic coffees",
+      },
+    ],
+  },
+  {
+    id: "52",
+    question: "How much would you like?",
+    name: "quantity",
+    options: [
+      {
+        id: "520",
+        type: "250g",
+        answer: "Perfect for the solo drinker. Yields about 12 delicious cups.",
+      },
+      {
+        id: "521",
+        type: "500g",
+        answer: "Perfect option for a couple. Yields about 40 delectable cups.",
+      },
+      {
+        id: "522",
+        type: "1000g",
+        answer:
+          "Perfect for offices and events. Yields about 90 delightful cups.",
+      },
+    ],
+  },
+  {
+    id: "53",
+    question: "Want us to grind them?",
+    name: "grind",
+    options: [
+      {
+        id: "530",
+        type: "Wholebean",
+        answer: "Best choice if you cherish the full sensory experience",
+      },
+      {
+        id: "531",
+        type: "FilterTEST",
+        answer: "For drip or pour-over coffee methods such as V60 or Aeropress",
+      },
+      {
+        id: "532",
+        type: "Cafetiére",
+        answer: "Course ground beans specially suited for french press coffee",
+      },
+    ],
+  },
+  {
+    id: "54",
+    question: "How often should we deliver?",
+    name: "deliveries",
+    options: [
+      {
+        id: "540",
+        type: "Every week",
+        answer: "$7.20 per shipment. Includes free first-class shipping.",
+      },
+      {
+        id: "541",
+        type: "Every 2 weeks",
+        answer: "$9.60 per shipment. Includes free priority shipping.",
+      },
+      {
+        id: "542",
+        type: "Every month",
+        answer: "$12.00 per shipment. Includes free priority shipping.",
+      },
+    ],
+  },
+];
