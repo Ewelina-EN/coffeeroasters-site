@@ -16,7 +16,7 @@ export const Accordion = () => {
       setActiveItem([...activeItem, id]);
     }
   };
-  // TODO: nie łąpie odpowiedzi Filter(nie łapie styli ale wyświetla w konsoli) i odpowiedzi w ostanim pytaniu(nie łapie styli ale konsoli wyswietla poprawnie)
+
   const handleOptionChange = (questionName, answerType) => {
     const updatedAnswerType = answerType
       .split(" ")
@@ -70,7 +70,13 @@ export const Accordion = () => {
                           id={opt.id}
                           name={item.name}
                           value={opt.id}
-                          checked={selectedOptions[item.name] === opt.type}
+                          checked={
+                            // (selectedOptions[item.name]
+                            //   ? selectedOptions[item.name].toLowerCase()
+                            //   : null) === opt.type.toLowerCase()
+                            selectedOptions[item.name]?.toLowerCase() ===
+                            opt.type.toLowerCase()
+                          }
                           onChange={() =>
                             handleOptionChange(item.name, opt.type)
                           }
