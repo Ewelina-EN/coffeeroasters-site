@@ -67,15 +67,15 @@ export const Accordion = () => {
                       <div key={opt.id} className="accordion_answer">
                         <input
                           type="radio"
-                          id={opt.type}
+                          id={opt.id}
                           name={item.name}
-                          value={opt.type}
+                          value={opt.id}
                           checked={selectedOptions[item.name] === opt.type}
                           onChange={() =>
                             handleOptionChange(item.name, opt.type)
                           }
                         />
-                        <label htmlFor={opt.type} className="accordion_label">
+                        <label htmlFor={opt.id} className="accordion_label">
                           <h3 className="accordion_subtitle">{opt.type}</h3>
                           <p className="accordion_description">{opt.answer}</p>
                         </label>

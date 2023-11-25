@@ -244,7 +244,7 @@ export const SubscriptionList = [
       },
       {
         id: "531",
-        type: "FilterTEST",
+        type: "Filter",
         answer: "For drip or pour-over coffee methods such as V60 or Aeropress",
       },
       {
