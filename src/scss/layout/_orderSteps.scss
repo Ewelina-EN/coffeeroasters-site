@@ -5,6 +5,7 @@
     background-color: base.$outer-space;
     color: base.$light-cream;
     text-align: center;
+    border-radius: 10px;
 }
 
 .order_list {
@@ -35,4 +36,5 @@
     font-size: 15px;
     font-weight: 400;
     line-height: 25px;
+    opacity: 0.8;
 }

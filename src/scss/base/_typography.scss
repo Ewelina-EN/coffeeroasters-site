@@ -1,7 +1,5 @@
-@use './variables';
+@use '../base/variables';
 @import '../base/media';
-
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&display=swap');
 
 h1, h2, h3, h4, h5, button {
     font-family: variables.$heading-font;
