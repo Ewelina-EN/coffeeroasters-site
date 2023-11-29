@@ -7,8 +7,6 @@ import "../scss/layout/_footer.scss";
 import LogoFooter from "../assets/shared/desktop/logofooter.svg";
 import { IconContext } from "react-icons/lib";
 
-//TODO: add linking to the top of the page
-
 export const Footer = () => {
   return (
     <IconContext.Provider value={{ size: 24 }}>
@@ -18,7 +16,9 @@ export const Footer = () => {
         </Link>
 
         <nav className="footer-menu">
-          <NavList isFooter={true} />
+          <ul className="footer-list">
+            <NavList isFooter={true} />
+          </ul>
         </nav>
 
         <div className="footer-social">
