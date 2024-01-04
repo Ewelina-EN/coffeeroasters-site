@@ -1,4 +1,5 @@
 @use '../base';
+@import '../base/media';
 
 .summary {
     background-color: base.$dark-grey-blue;
@@ -35,4 +36,10 @@
 .summary_btn {
     display: block;
     margin: 0 auto;
+}
+
+@media (min-width: $medium) {
+    .summary{
+        padding: 25px 44px;
+    }
 }
