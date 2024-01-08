@@ -97,3 +97,45 @@
         padding-top: 24px;
     }
 }
+
+@media (min-width: $large) {
+    .collection {
+        margin: 0 0 120px 0;
+    }
+
+    .collection-title {
+        font-size: 150px;
+        font-weight: 900;
+        font-style: normal;
+        line-height: 120px; /* 48% */
+        background: linear-gradient(180deg, #83888F 0%, rgba(254, 252, 247, 0.00) 100%);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        width: 100%;
+    }
+
+    .collection-list {
+        flex-direction: row;
+        justify-content: center;
+        margin-top: -55px;
+        width: 90%;
+    }
+
+    .collection-item {
+        display: block;
+        width: 256px;
+        margin: 0;
+        text-align: center;
+        margin: 0 10px;
+    }
+
+    .collection-img {
+        height: 150px;
+        margin-bottom: 71px;
+    }
+
+    .collection-summary {
+        font-size: 16px;
+        line-height: 26px; /* 162.5% */
+    }
+}
