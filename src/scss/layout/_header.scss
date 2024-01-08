@@ -92,3 +92,21 @@
          background-position: center;
       }
 }
+
+@media (min-width: $large) {
+      .header_home {
+         background-image: url('../../assets/home/desktop/image-hero-coffeepress.jpg');
+         background-position: center;
+      }
+
+      .header_title {
+         margin: 0 0 32px 0;
+         font-size: 61px;
+         font-weight: 900;
+         line-height: 72px; /* 100% */
+      }
+
+      .header_content {
+         font-size: 16px;
+      }
+}
