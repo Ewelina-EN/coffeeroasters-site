@@ -114,3 +114,29 @@
 	    // margin: auto 0;
     }
 }
+
+@media (min-width: $large) {
+    .line {
+        margin-right: 300px;
+    }
+
+    .works {
+        margin-left: 35px;
+    }
+    
+    .work_subtitle {
+        margin-right: 20px;
+    }
+
+    .work_list {
+        justify-content: flex-start;
+    }
+
+    .work_item {
+        margin-right: 70px;
+    }
+
+    .point {
+        width: 68%;
+    }
+}
