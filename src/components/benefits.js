@@ -7,7 +7,7 @@ export const Benefits = () => {
     <div className="benefits-main">
       <BgBenefits />
       <section className="benefits">
-        <ul>
+        <ul className="benefits-list">
           {BenefitsList.map((benefit) => {
             return (
               <li key={benefit.id} className="benefits-item">
