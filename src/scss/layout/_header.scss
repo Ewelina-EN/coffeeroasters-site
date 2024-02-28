@@ -10,6 +10,9 @@
 }
 
 .header_main {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
    padding: 96px 24px;
    text-align: center;
 }
@@ -30,6 +33,8 @@
 }
 
 .header_btn {
+   font-family: base.$heading-font;
+   width: 217px;
    border-radius: 6px;
    border: none;
    background: base.$dark-cyan;
@@ -40,6 +45,7 @@
    line-height: 25px;
    padding: 15px 31px;
    margin-top: 39px;
+   text-decoration: none;
 }
 
 .header_btn:hover, .header_btn:focus {

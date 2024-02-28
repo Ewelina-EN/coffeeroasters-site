@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { FaBars } from "react-icons/fa";
-import { AiOutlineClose } from "react-icons/ai";
+import { IoClose } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import { IconContext } from "react-icons";
 import { NavList } from "./navList";
@@ -36,9 +36,6 @@ export const Navigation = ({ isFooter }) => {
           <Link to="/">
             <img src={LogoNav} className="navbar-logo" alt="logo"></img>
           </Link>
-          {/* add to FaBars css on hover cursor style(pointer etc)
-          change size of hamburger icon for better UI on touch */}
-
           <FaBars onClick={showSidebar} className="fabars" />
 
           <>
@@ -48,7 +45,7 @@ export const Navigation = ({ isFooter }) => {
                   <Link to="/">
                     <img src={LogoNav} className="navbar-logo" alt="logo" />
                   </Link>
-                  <AiOutlineClose onClick={showSidebar} />
+                  <IoClose onClick={showSidebar} className="fabars" />
                 </li>
                 <NavList className={navListClassName} onClick={showSidebar} />
               </ul>
