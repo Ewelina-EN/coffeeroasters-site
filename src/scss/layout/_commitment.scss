@@ -65,3 +65,22 @@
         margin-left: 71px
     }
 }
+
+@media (min-width: $large) {
+    .commitment {
+        margin: 0 50px;
+        // grid-template-columns: repeat(2, 1fr);
+    }
+    .commitment-img {
+        background-image: url('../../assets/about/desktop/image-commitment.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 402px;
+        border-radius: 8px;
+    }
+
+    // .commitment-content {
+    //     margin: 0 30px;
+    // }
+}

@@ -60,3 +60,9 @@
         font-weight: 400;
     }
 }
+
+@media (min-width: $large) {
+.location {
+    margin: 0 50px;
+}
+}
