@@ -10,7 +10,16 @@
 }
 
 .navbar-logo{
-  height: 18px;;
+  height: 20px;;
+}
+
+.fabars {
+  height: 25px;
+  width: 30px;
+}
+
+.sidebar-open .main {
+  display: none;
 }
 
 .nav-menu {
@@ -123,4 +132,22 @@ span {
     letter-spacing: 0.923px;
     text-transform: uppercase;
   }
+}
+
+@media (min-width: $large) {
+    .navbar {
+      margin: 20px 40px 10px 40px;
+    }
+
+    .nav-menu {
+      width: auto;
+    }
+
+    .nav-menu-items {
+      justify-content: center;
+    }
+
+    .nav-menu ul li:last-child {
+      padding: 0;
+    }
 }

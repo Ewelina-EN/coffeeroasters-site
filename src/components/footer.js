@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import { AiFillFacebook } from "react-icons/ai";
 import { AiOutlineTwitter } from "react-icons/ai";
 import { AiOutlineInstagram } from "react-icons/ai";
@@ -8,6 +9,12 @@ import LogoFooter from "../assets/shared/desktop/logofooter.svg";
 import { IconContext } from "react-icons/lib";
 
 export const Footer = () => {
+  const [linkClicked, setLinkClicked] = useState(false);
+
+  const handleClick = () => {
+    setLinkClicked(true);
+    window.scrollTo(0, 0);
+  };
   return (
     <IconContext.Provider value={{ size: 24 }}>
       <footer className="footer">
@@ -17,7 +24,7 @@ export const Footer = () => {
 
         <nav className="footer-menu">
           <ul className="footer-list">
-            <NavList isFooter={true} />
+            <NavList isFooter={true} onClick={handleClick} />
           </ul>
         </nav>
 
