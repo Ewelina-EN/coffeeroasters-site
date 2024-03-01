@@ -50,7 +50,7 @@
     display: none;
 }
 
-@media (min-width: $medium){
+@media (min-width: $medium) {
     .works {
         align-items: flex-start;
         text-align: left;
@@ -144,5 +144,39 @@
 
     .point {
         width: 68%;
+    }
+}
+
+@media (min-width: $xlarge) {
+    .line {
+    margin-right: 530px;
+    width: 75%;
+    }
+
+    .works {
+    max-width: 1100px;
+    margin: 170px auto;
+    }
+
+    .work_list {
+        justify-content: space-between;
+    }
+
+    .work_item {
+        width: 285px;
+        margin: 0;
+    }
+
+    .work_summary {
+        width: 285px;
+        padding-right: 20px;
+    }
+
+    .work_subtitle {
+        margin-right: 60px;
+    }
+
+    .point {
+        width: 76% ;
     }
 }

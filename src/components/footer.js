@@ -18,26 +18,28 @@ export const Footer = () => {
   return (
     <IconContext.Provider value={{ size: 24 }}>
       <footer className="footer">
-        <Link to="/">
-          <img src={LogoFooter} className="footer-logo" alt="logo"></img>
-        </Link>
+        <div className="footer-container">
+          <Link to="/">
+            <img src={LogoFooter} className="footer-logo" alt="logo"></img>
+          </Link>
 
-        <nav className="footer-menu">
-          <ul className="footer-list">
-            <NavList isFooter={true} onClick={handleClick} />
-          </ul>
-        </nav>
+          <nav className="footer-menu">
+            <ul className="footer-list">
+              <NavList isFooter={true} onClick={handleClick} />
+            </ul>
+          </nav>
 
-        <div className="footer-social">
-          <a href="https://www.facebook.com/home.php">
-            <AiFillFacebook className="social-item" />
-          </a>
-          <a href="https://twitter.com/?lang=pl">
-            <AiOutlineTwitter className="social-item" />
-          </a>
-          <a href="https://www.instagram.com/">
-            <AiOutlineInstagram className="social-item" />
-          </a>
+          <div className="footer-social">
+            <a href="https://www.facebook.com/home.php">
+              <AiFillFacebook className="social-item" />
+            </a>
+            <a href="https://twitter.com/?lang=pl">
+              <AiOutlineTwitter className="social-item" />
+            </a>
+            <a href="https://www.instagram.com/">
+              <AiOutlineInstagram className="social-item" />
+            </a>
+          </div>
         </div>
       </footer>
     </IconContext.Provider>
