@@ -79,8 +79,21 @@
         width: 402px;
         border-radius: 8px;
     }
+}
 
-    // .commitment-content {
-    //     margin: 0 30px;
-    // }
+@media (min-width: $xlarge) {
+    .commitment {
+        max-width: 1200px;
+        margin: 0 auto;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .commitment-content {
+        margin: 0 100px 0 0 ;
+    }
+    .main {
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+  
 }

@@ -66,3 +66,16 @@
     margin: 0 50px;
 }
 }
+
+@media (min-width:$xlarge) {
+    .location {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .location_subtitle {
+        font-size: 32px;
+    }
+    .location_country {
+        width: 1045px;
+    }
+}

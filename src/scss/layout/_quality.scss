@@ -100,3 +100,25 @@
         text-align: left;
     }
 }
+
+@media (min-width: $xlarge) {
+    .quality_title {
+        font-size: 40px;
+    }
+    .quality_content {
+        max-width: 1280px;
+        padding: 90px 0 150px 70px;
+    }
+
+    .quality_img {
+        position: relative;
+        width: 405px;
+        height: 424px;
+        margin-bottom: -380px;
+    }
+
+    .quality_description {
+        width: 540px;
+        font-size: 16px;
+    }
+}

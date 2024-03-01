@@ -179,3 +179,17 @@
         line-height: 26px; /* 162.5% */
     }
 }
+
+@media (min-width: $xlarge) {
+    .benefits-main {
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+
+    .benefits-item {
+        width: 350px;
+        height: 382px;
+        padding: 48px 35px;
+        justify-content: center;
+    }
+}
