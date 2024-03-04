@@ -121,6 +121,8 @@ color: base.$light-cream;
         margin: 24px 0 100px 0;
         display: flex;
         flex-direction: row;
+        justify-content: center;
+        align-items: center;
         }
     }
     
@@ -140,5 +142,12 @@ color: base.$light-cream;
 
     .accordion_subtitle {
         margin-bottom: 24px;
+    }
+}
+
+@media (min-width: $large) {
+    .accordion_container {
+        width: 80%;
+        margin: 0 auto;
     }
 }

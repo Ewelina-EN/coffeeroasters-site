@@ -47,3 +47,10 @@
        font-size: 29px;
     }
 }
+
+@media (min-width: $large) {
+    .summary {
+        width: 80%;
+        margin: 120px auto 70px auto;
+    }
+}
