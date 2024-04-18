@@ -277,3 +277,31 @@ export const SubscriptionList = [
     ],
   },
 ];
+
+export const SideMenu = [
+  {
+    id: "50",
+    num: "01",
+    title: "Preferences",
+  },
+  {
+    id: "51",
+    num: "02",
+    title: "Bean Type",
+  },
+  {
+    id: "52",
+    num: "03",
+    title: "Quantity",
+  },
+  {
+    id: "53",
+    num: "04",
+    title: "Grind Option",
+  },
+  {
+    id: "54",
+    num: "05",
+    title: "Deliveries",
+  },
+];

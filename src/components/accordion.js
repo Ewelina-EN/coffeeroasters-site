@@ -1,4 +1,4 @@
-import { SubscriptionList } from "./dataList";
+import { SubscriptionList, SideMenu } from "./dataList";
 import "../scss/layout/_accordion.scss";
 import { useState } from "react";
 import { OrderSummary } from "./orderSummary";
@@ -27,7 +27,6 @@ export const Accordion = () => {
       ...prevSelectedOptions,
       [questionName]: updatedAnswerType,
     }));
-    console.log(updatedAnswerType);
   };
 
   const toggleOrderCheckout = (e) => {
@@ -36,74 +35,97 @@ export const Accordion = () => {
   };
 
   return (
-    <div>
-      <ul>
-        {SubscriptionList.map((item) => {
-          return (
-            <li key={item.id} className="accordion_item">
-              <div id={item.name}>
-                <h2 className="accordion_title">
-                  <button
-                    onClick={() => {
-                      handleShow(item.id);
-                    }}
-                    id={`accordionBtn${item.id}`}
-                    className={`accordion--btn ${
-                      activeItem.includes(item.id) ? "collapsed" : ""
+    <div className="sidebar_container">
+      <nav className="sidebar_menu">
+        <ul className="sidebar-items">
+          {SideMenu.map((item) => {
+            return (
+              <li key={item.id} className="sidebar-item">
+                <button
+                  onClick={() => {
+                    handleShow(item.id);
+                  }}
+                  id={item.id}
+                >
+                  <span>{item.num}</span>
+                  {item.title}
+                </button>
+              </li>
+            );
+          })}
+        </ul>
+      </nav>
+      <div className="accordion_container">
+        <ul>
+          {SubscriptionList.map((item) => {
+            return (
+              <li key={item.id} className="accordion_item">
+                <div id={item.name}>
+                  <h2 className="accordion_title">
+                    <button
+                      onClick={() => {
+                        handleShow(item.id);
+                      }}
+                      id={`accordionBtn${item.id}`}
+                      className={`accordion--btn ${
+                        activeItem.includes(item.id) ? "collapsed" : ""
+                      }`}
+                    >
+                      {item.question}
+                    </button>
+                  </h2>
+
+                  <div
+                    id={`collapse${item.id}`}
+                    className={`collapse ${
+                      activeItem.includes(item.id) ? "show" : ""
                     }`}
                   >
-                    {item.question}
-                  </button>
-                </h2>
-
-                <div
-                  id={`collapse${item.id}`}
-                  className={`collapse ${
-                    activeItem.includes(item.id) ? "show" : ""
-                  }`}
-                >
-                  {item.options.map((opt) => {
-                    return (
-                      <div key={opt.id} className="accordion_answer">
-                        <input
-                          type="radio"
-                          id={opt.id}
-                          name={item.name}
-                          value={opt.id}
-                          checked={
-                            // (selectedOptions[item.name]
-                            //   ? selectedOptions[item.name].toLowerCase()
-                            //   : null) === opt.type.toLowerCase()
-                            selectedOptions[item.name]?.toLowerCase() ===
-                            opt.type.toLowerCase()
-                          }
-                          onChange={() =>
-                            handleOptionChange(item.name, opt.type)
-                          }
-                        />
-                        <label htmlFor={opt.id} className="accordion_label">
-                          <h3 className="accordion_subtitle">{opt.type}</h3>
-                          <p className="accordion_description">{opt.answer}</p>
-                        </label>
-                      </div>
-                    );
-                  })}
+                    {item.options.map((opt) => {
+                      return (
+                        <div key={opt.id} className="accordion_answer">
+                          <input
+                            type="radio"
+                            id={opt.id}
+                            name={item.name}
+                            value={opt.id}
+                            checked={
+                              // (selectedOptions[item.name]
+                              //   ? selectedOptions[item.name].toLowerCase()
+                              //   : null) === opt.type.toLowerCase()
+                              selectedOptions[item.name]?.toLowerCase() ===
+                              opt.type.toLowerCase()
+                            }
+                            onChange={() =>
+                              handleOptionChange(item.name, opt.type)
+                            }
+                          />
+                          <label htmlFor={opt.id} className="accordion_label">
+                            <h3 className="accordion_subtitle">{opt.type}</h3>
+                            <p className="accordion_description">
+                              {opt.answer}
+                            </p>
+                          </label>
+                        </div>
+                      );
+                    })}
+                  </div>
                 </div>
-              </div>
-            </li>
-          );
-        })}
-      </ul>
-      <OrderSummary
-        selectedOptions={selectedOptions}
-        toggleOrderCheckout={toggleOrderCheckout}
-      />
-      {isOrderCheckoutVisible && (
-        <OrderCheckout
+              </li>
+            );
+          })}
+        </ul>
+        <OrderSummary
           selectedOptions={selectedOptions}
           toggleOrderCheckout={toggleOrderCheckout}
         />
-      )}
+        {isOrderCheckoutVisible && (
+          <OrderCheckout
+            selectedOptions={selectedOptions}
+            toggleOrderCheckout={toggleOrderCheckout}
+          />
+        )}
+      </div>
     </div>
   );
 };

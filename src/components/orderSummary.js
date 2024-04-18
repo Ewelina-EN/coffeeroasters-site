@@ -2,7 +2,7 @@ import "../scss/layout/_orderSummary.scss";
 
 export const OrderSummary = ({ selectedOptions, toggleOrderCheckout }) => {
   return (
-    <form>
+    <form className="summary_form">
       <div className="summary">
         <h3 className="summary_title">ORDER SUMMARY</h3>
         <p className="summary_description">
