@@ -280,27 +280,27 @@ export const SubscriptionList = [
 
 export const SideMenu = [
   {
-    id: "60",
+    id: "50",
     num: "01",
     title: "Preferences",
   },
   {
-    id: "61",
+    id: "51",
     num: "02",
     title: "Bean Type",
   },
   {
-    id: "62",
+    id: "52",
     num: "03",
     title: "Quantity",
   },
   {
-    id: "63",
+    id: "53",
     num: "04",
     title: "Grind Option",
   },
   {
-    id: "64",
+    id: "54",
     num: "05",
     title: "Deliveries",
   },
