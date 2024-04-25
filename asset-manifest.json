@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/coffeeroasters-site/static/css/main.a9bdca31.css",
+    "main.css": "/coffeeroasters-site/static/css/main.f5f7cd0b.css",
     "main.js": "/coffeeroasters-site/static/js/main.d13ae9c2.js",
     "static/media/image-hero-whitecup.jpg": "/coffeeroasters-site/static/media/image-hero-whitecup.531ce5f31b60be0d761f.jpg",
     "static/media/image-hero-coffeepress.jpg": "/coffeeroasters-site/static/media/image-hero-coffeepress.73479cf61bb756da988d.jpg",
@@ -21,11 +21,11 @@
     "static/media/illustration-canada.svg": "/coffeeroasters-site/static/media/illustration-canada.30bd34392e490497b36ee62529dd10a3.svg",
     "static/media/icon-coffee-bean.svg": "/coffeeroasters-site/static/media/icon-coffee-bean.a39b0780d7eeb72d87aa4f5a2b7f4bdf.svg",
     "static/media/icon-arrow.svg": "/coffeeroasters-site/static/media/icon-arrow.00b9181eea351d3164ce.svg",
-    "main.a9bdca31.css.map": "/coffeeroasters-site/static/css/main.a9bdca31.css.map",
+    "main.f5f7cd0b.css.map": "/coffeeroasters-site/static/css/main.f5f7cd0b.css.map",
     "main.d13ae9c2.js.map": "/coffeeroasters-site/static/js/main.d13ae9c2.js.map"
   },
   "entrypoints": [
-    "static/css/main.a9bdca31.css",
+    "static/css/main.f5f7cd0b.css",
     "static/js/main.d13ae9c2.js"
   ]
 }
