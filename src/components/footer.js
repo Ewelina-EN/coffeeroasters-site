@@ -19,7 +19,7 @@ export const Footer = () => {
     <IconContext.Provider value={{ size: 24 }}>
       <footer className="footer">
         <div className="footer-container">
-          <Link to="/">
+          <Link to="/coffeeroasters-site/">
             <img src={LogoFooter} className="footer-logo" alt="logo"></img>
           </Link>
 
