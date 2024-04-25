@@ -21,7 +21,7 @@ const router = createBrowserRouter([
     element: <AppLayout />,
     children: [
       {
-        path: "/",
+        path: "/coffeeroasters-site",
         element: <HomePage />,
       },
       {
