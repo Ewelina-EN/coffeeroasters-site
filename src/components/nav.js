@@ -33,7 +33,7 @@ export const Navigation = ({ isFooter }) => {
     <>
       <IconContext.Provider value={{ color: "#333D4B" }}>
         <div className="navbar">
-          <Link to="/coffeeroasters-site/">
+          <Link to="/coffeeroasters-site">
             <img src={LogoNav} className="navbar-logo" alt="logo"></img>
           </Link>
           <FaBars onClick={showSidebar} className="fabars" />

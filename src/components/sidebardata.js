@@ -3,7 +3,7 @@ import { AiFillHome } from "react-icons/ai";
 export const SidebarData = [
   {
     title: "Home",
-    path: "/",
+    path: "/coffeeroasters-site",
     icons: <AiFillHome />,
     cName: "nav-text",
   },
