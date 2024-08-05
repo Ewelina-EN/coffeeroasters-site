@@ -1,6 +1,10 @@
 import "../scss/layout/_checkout.scss";
 
-export const OrderCheckout = ({ selectedOptions, toggleOrderCheckout }) => {
+export const OrderCheckout = ({
+  selectedOptions,
+  toggleOrderCheckout,
+  total,
+}) => {
   return (
     <div className="checkout-overlay">
       <form className="checkout-form">
@@ -28,7 +32,7 @@ export const OrderCheckout = ({ selectedOptions, toggleOrderCheckout }) => {
           className="header_btn checkout-btn"
           onClick={toggleOrderCheckout}
         >
-          Checkout - $14.00 / mo
+          Checkout - ${total} / mo
         </button>
       </form>
     </div>

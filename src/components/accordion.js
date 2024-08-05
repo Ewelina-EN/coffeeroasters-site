@@ -9,6 +9,7 @@ export const Accordion = () => {
   const [selectedOptions, setSelectedOptions] = useState({});
   const [isOrderCheckoutVisible, setOrderCheckoutVisible] = useState(false);
 
+  //rozwijanie i zwijanie elementów
   const handleShow = (id) => {
     if (activeItem.includes(id)) {
       setActiveItem(activeItem.filter((item) => item !== id));
@@ -17,6 +18,7 @@ export const Accordion = () => {
     }
   };
 
+  // aktualizuje wybrane opcje na podstawie wybranych odpowiedzi
   const handleOptionChange = (questionName, answerType) => {
     const updatedAnswerType = answerType
       .split(" ")
@@ -29,9 +31,24 @@ export const Accordion = () => {
     }));
   };
 
+  // przelacza widocznosc komponentu OrderCheckout
   const toggleOrderCheckout = (e) => {
     e.preventDefault();
     setOrderCheckoutVisible(!isOrderCheckoutVisible);
+  };
+
+  const calculateTotal = () => {
+    let total = 0;
+    SubscriptionList.forEach((item) => {
+      const selectedOption = item.options.find(
+        (opt) =>
+          opt.type.toLowerCase() === selectedOptions[item.name]?.toLowerCase()
+      );
+      if (selectedOption) {
+        total += selectedOption.price;
+      }
+    });
+    return total.toFixed(2);
   };
 
   return (
@@ -118,11 +135,13 @@ export const Accordion = () => {
         <OrderSummary
           selectedOptions={selectedOptions}
           toggleOrderCheckout={toggleOrderCheckout}
+          total={calculateTotal}
         />
         {isOrderCheckoutVisible && (
           <OrderCheckout
             selectedOptions={selectedOptions}
             toggleOrderCheckout={toggleOrderCheckout}
+            total={calculateTotal()}
           />
         )}
       </div>

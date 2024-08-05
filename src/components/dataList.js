@@ -170,17 +170,20 @@ export const SubscriptionList = [
         id: "501",
         type: "Capsule",
         answer: "Compatible with Nespresso systems and similar brewers",
+        price: 10,
       },
       {
         id: "502",
         type: "Filter",
         answer: "For pour over or drip methods like Aeropress, Chemex, and V60",
+        price: 10,
       },
       {
         id: "503",
         type: "Espresso",
         answer:
           "Dense and finely ground beans for an intense, flavorful experience",
+        price: 10,
       },
     ],
   },
@@ -194,18 +197,21 @@ export const SubscriptionList = [
         type: "Single Origin",
         answer:
           "Distinct, high quality coffee from a specific family-owned farm",
+        price: 10,
       },
       {
         id: "511",
         type: "Decaf",
         answer:
           "Just like regular coffee, except the caffeine has been removed",
+        price: 10,
       },
       {
         id: "512",
         type: "Blended",
         answer:
           "Combination of two or three dark roasted beans of organic coffees",
+        price: 10,
       },
     ],
   },
@@ -218,17 +224,20 @@ export const SubscriptionList = [
         id: "520",
         type: "250g",
         answer: "Perfect for the solo drinker. Yields about 12 delicious cups.",
+        price: 10,
       },
       {
         id: "521",
         type: "500g",
         answer: "Perfect option for a couple. Yields about 40 delectable cups.",
+        price: 10,
       },
       {
         id: "522",
         type: "1000g",
         answer:
           "Perfect for offices and events. Yields about 90 delightful cups.",
+        price: 10,
       },
     ],
   },
@@ -241,16 +250,19 @@ export const SubscriptionList = [
         id: "530",
         type: "Wholebean",
         answer: "Best choice if you cherish the full sensory experience",
+        price: 10,
       },
       {
         id: "531",
         type: "Filter",
         answer: "For drip or pour-over coffee methods such as V60 or Aeropress",
+        price: 10,
       },
       {
         id: "532",
         type: "Cafetiére",
         answer: "Course ground beans specially suited for french press coffee",
+        price: 10,
       },
     ],
   },
@@ -263,16 +275,19 @@ export const SubscriptionList = [
         id: "540",
         type: "Every week",
         answer: "$7.20 per shipment. Includes free first-class shipping.",
+        price: 7.2,
       },
       {
         id: "541",
         type: "Every 2 weeks",
         answer: "$9.60 per shipment. Includes free priority shipping.",
+        price: 9.6,
       },
       {
         id: "542",
         type: "Every month",
         answer: "$12.00 per shipment. Includes free priority shipping.",
+        price: 12.0,
       },
     ],
   },
