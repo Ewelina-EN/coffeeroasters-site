@@ -1,4 +1,5 @@
 import "../scss/layout/_checkout.scss";
+import { FaTimes } from "react-icons/fa";
 
 export const OrderCheckout = ({
   selectedOptions,
@@ -9,6 +10,9 @@ export const OrderCheckout = ({
     <div className="checkout-overlay">
       <form className="checkout-form">
         <div className="checkout-order">
+          <div className="close-icon">
+            <FaTimes onClick={toggleOrderCheckout} />
+          </div>
           <h3 className="checkout-title">Order Summary</h3>
         </div>
         <div className="checkout-info">

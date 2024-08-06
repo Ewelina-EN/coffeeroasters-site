@@ -1,10 +1,6 @@
 import "../scss/layout/_orderSummary.scss";
 
-export const OrderSummary = ({
-  selectedOptions,
-  toggleOrderCheckout,
-  total,
-}) => {
+export const OrderSummary = ({ selectedOptions, toggleOrderCheckout }) => {
   return (
     <form className="summary_form">
       <div className="summary">
